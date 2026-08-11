@@ -31,177 +31,216 @@ body{margin:0;background:#f3f4f6;color:#111827;font-family:-apple-system,BlinkMa
 .notes li{margin:9px 0;font-size:13px}
 .footer{font-size:11px;color:#6b7280;text-align:center;margin-top:20px}
 @media(min-width:600px){.wrap{padding:24px 18px}}
+
+.lang-switcher{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.lang-btn{border:0;background:white;color:#111827;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:800;box-shadow:0 1px 3px #00000012;cursor:pointer}
+.lang-btn.active{background:#111827;color:white}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <nav class="lang-switcher" aria-label="Language">
+    <button class="lang-btn active" data-lang="en">🇺🇸 English</button>
+    <button class="lang-btn" data-lang="ja">🇯🇵 日本語</button>
+    <button class="lang-btn" data-lang="ko">🇰🇷 한국어</button>
+    <button class="lang-btn" data-lang="id">🇮🇩 Indonesia</button>
+    <button class="lang-btn" data-lang="tr">🇹🇷 Türkçe</button>
+  </nav>
   <header class="hero">
-    <h1>Alliance Showdown<br>Kick Candidate Report</h1>
-    <p><b>Analysis period:</b> 2026/7/4 – 2026/8/8</p>
-    <p><b>Rounds:</b> 6</p>
-    <p>Rank #1 = strongest kick recommendation</p>
+    <h1><span data-i18n="title">Alliance Showdown<br>Kick Candidate Report</span></h1>
+    <p><span data-i18n="analysis_period"><b>Analysis period:</b> 2026/7/4 – 2026/8/8</span></p>
+    <p><span data-i18n="rounds"><b>Rounds:</b> 6</span></p>
+    <p><span data-i18n="rank_note">Rank #1 = strongest kick recommendation</span></p>
   </header>
 
   <div class="summary">
-    <div class="tile"><strong>10</strong><span>Candidates</span></div>
-    <div class="tile"><strong>5</strong><span>Top Priority</span></div>
-    <div class="tile"><strong>6</strong><span>Rounds</span></div>
+    <div class="tile"><strong>10</strong><span data-i18n="candidates">Candidates</span></div>
+    <div class="tile"><strong>5</strong><span data-i18n="top_priority">Top Priority</span></div>
+    <div class="tile"><strong>6</strong><span data-i18n="rounds_label">Rounds</span></div>
   </div>
 
-  <h2 class="section-title">Recommended Review Order</h2>
+  <h2 class="section-title"><span data-i18n="review_order">Recommended Review Order</span></h2>
   
     <section class="card red">
       <div class="rank">#1</div>
       <div class="name">Balancas</div>
-      <div class="badge">🔴 Highest priority</div>
+      <div class="badge"><span data-i18n="highest_priority">🔴 Highest priority</span></div>
       <div class="stats">
-        <div><span>Power</span><b>163.5</b></div>
-        <div><span>Power Rank</span><b>#41</b></div>
-        <div><span>Avg Points</span><b>9.91M</b></div>
-        <div><span>Avg Rank</span><b>86.7</b></div>
-        <div><span>Recent Change</span><b>+32.0%</b></div>
+        <div><span data-i18n="power">Power</span><b>163.5</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#41</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>9.91M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>86.7</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+32.0%</b></div>
       </div>
-      <p>Ranked in the lower group for all six rounds: 82→84→86→89→89→90. Long-term low contribution despite relatively strong power.</p>
+      <p><span data-i18n="p1">Ranked in the lower group for all six rounds: 82→84→86→89→89→90. Long-term low contribution despite relatively strong power.</span></p>
     </section>
     
     <section class="card red">
       <div class="rank">#2</div>
       <div class="name">GHOIGOBIN</div>
-      <div class="badge">🔴 Highest priority</div>
+      <div class="badge"><span data-i18n="highest_priority">🔴 Highest priority</span></div>
       <div class="stats">
-        <div><span>Power</span><b>164.0</b></div>
-        <div><span>Power Rank</span><b>#40</b></div>
-        <div><span>Avg Points</span><b>19.35M</b></div>
-        <div><span>Avg Rank</span><b>81.5</b></div>
-        <div><span>Recent Change</span><b>+7.0%</b></div>
+        <div><span data-i18n="power">Power</span><b>164.0</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#40</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>19.35M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>81.5</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+7.0%</b></div>
       </div>
-      <p>Stayed around ranks 79–84 for all six rounds. Power is relatively high, but Alliance Showdown contribution remains consistently low.</p>
+      <p>Stayed around ranks 79–84 for all six rounds. <span data-i18n="power">Power</span> is relatively high, but Alliance Showdown contribution remains consistently low.</p>
     </section>
     
     <section class="card red">
       <div class="rank">#3</div>
       <div class="name">kapitany</div>
-      <div class="badge">🔴 Highest priority</div>
+      <div class="badge"><span data-i18n="highest_priority">🔴 Highest priority</span></div>
       <div class="stats">
-        <div><span>Power</span><b>143.6</b></div>
-        <div><span>Power Rank</span><b>#51</b></div>
-        <div><span>Avg Points</span><b>22.72M</b></div>
-        <div><span>Avg Rank</span><b>80.2</b></div>
-        <div><span>Recent Change</span><b>+9.2%</b></div>
+        <div><span data-i18n="power">Power</span><b>143.6</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#51</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>22.72M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>80.2</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+9.2%</b></div>
       </div>
-      <p>Ranks remained around 76–85. Recent results improved by about 9%, but long-term contribution is still low.</p>
+      <p><span data-i18n="p3">Ranks remained around 76–85. Recent results improved by about 9%, but long-term contribution is still low.</span></p>
     </section>
     
     <section class="card orange">
       <div class="rank">#4</div>
       <div class="name">GR yellow</div>
-      <div class="badge">🟠 Review</div>
+      <div class="badge"><span data-i18n="review">🟠 Review</span></div>
       <div class="stats">
-        <div><span>Power</span><b>113.9</b></div>
-        <div><span>Power Rank</span><b>#65</b></div>
-        <div><span>Avg Points</span><b>26.59M</b></div>
-        <div><span>Avg Rank</span><b>75.7</b></div>
-        <div><span>Recent Change</span><b>+44.8%</b></div>
+        <div><span data-i18n="power">Power</span><b>113.9</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#65</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>26.59M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>75.7</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+44.8%</b></div>
       </div>
-      <p>Lower overall performance, but recent three-round points improved by about 45%. Therefore less certain than ranks 1–3.</p>
+      <p><span data-i18n="p4">Lower overall performance, but recent three-round points improved by about 45%. Therefore less certain than ranks 1–3.</span></p>
     </section>
     
     <section class="card orange">
       <div class="rank">#5</div>
       <div class="name">은아리aqa</div>
-      <div class="badge">🟠 Review</div>
+      <div class="badge"><span data-i18n="review">🟠 Review</span></div>
       <div class="stats">
-        <div><span>Power</span><b>65.3</b></div>
-        <div><span>Power Rank</span><b>#79</b></div>
-        <div><span>Avg Points</span><b>23.02M</b></div>
-        <div><span>Avg Rank</span><b>77.7</b></div>
-        <div><span>Recent Change</span><b>+7.5%</b></div>
+        <div><span data-i18n="power">Power</span><b>65.3</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#79</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>23.02M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>77.7</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+7.5%</b></div>
       </div>
-      <p>Both power and Alliance Showdown performance are low. Candidate based on overall contribution, not power-to-contribution mismatch.</p>
+      <p><span data-i18n="p5">Both power and Alliance Showdown performance are low. Candidate based on overall contribution, not power-to-contribution mismatch.</span></p>
     </section>
     
     <section class="card orange">
       <div class="rank">#6</div>
       <div class="name">부산71</div>
-      <div class="badge">🟠 Review</div>
+      <div class="badge"><span data-i18n="review">🟠 Review</span></div>
       <div class="stats">
-        <div><span>Power</span><b>102.6</b></div>
-        <div><span>Power Rank</span><b>#72</b></div>
-        <div><span>Avg Points</span><b>27.58M</b></div>
-        <div><span>Avg Rank</span><b>72.8</b></div>
-        <div><span>Recent Change</span><b>+4.7%</b></div>
+        <div><span data-i18n="power">Power</span><b>102.6</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#72</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>27.58M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>72.8</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+4.7%</b></div>
       </div>
-      <p>Lower overall contribution; review alongside activity and participation.</p>
+      <p><span data-i18n="p6">Lower overall contribution; review alongside activity and participation.</span></p>
     </section>
     
     <section class="card orange">
       <div class="rank">#7</div>
       <div class="name">JonseX</div>
-      <div class="badge">🟠 Improving</div>
+      <div class="badge"><span data-i18n="improving">🟠 Improving</span></div>
       <div class="stats">
-        <div><span>Power</span><b>120.5</b></div>
-        <div><span>Power Rank</span><b>#63</b></div>
-        <div><span>Avg Points</span><b>31.67M</b></div>
-        <div><span>Avg Rank</span><b>68.8</b></div>
-        <div><span>Recent Change</span><b>+9.6%</b></div>
+        <div><span data-i18n="power">Power</span><b>120.5</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#63</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>31.67M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>68.8</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+9.6%</b></div>
       </div>
-      <p>Recent performance is improving, so removal should be considered cautiously.</p>
+      <p><span data-i18n="p7">Recent performance is improving, so removal should be considered cautiously.</span></p>
     </section>
     
     <section class="card orange">
       <div class="rank">#8</div>
       <div class="name">Cihan Ozel</div>
-      <div class="badge">🟠 Low contribution vs. power</div>
+      <div class="badge"><span data-i18n="low_vs_power">🟠 Low contribution vs. power</span></div>
       <div class="stats">
-        <div><span>Power</span><b>204.5</b></div>
-        <div><span>Power Rank</span><b>#14</b></div>
-        <div><span>Avg Points</span><b>35.89M</b></div>
-        <div><span>Avg Rank</span><b>63.3</b></div>
-        <div><span>Recent Change</span><b>+12.2%</b></div>
+        <div><span data-i18n="power">Power</span><b>204.5</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#14</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>35.89M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>63.3</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>+12.2%</b></div>
       </div>
-      <p>Very high power, but contribution is comparatively low. The power-to-contribution gap is notable.</p>
+      <p><span data-i18n="p8">Very high power, but contribution is comparatively low. The power-to-contribution gap is notable.</span></p>
     </section>
     
     <section class="card yellow">
       <div class="rank">#9</div>
       <div class="name">Lara Lee</div>
-      <div class="badge">🟡 Low vs. power / slight decline</div>
+      <div class="badge"><span data-i18n="low_vs_power_decline">🟡 Low vs. power / slight decline</span></div>
       <div class="stats">
-        <div><span>Power</span><b>170.1</b></div>
-        <div><span>Power Rank</span><b>#34</b></div>
-        <div><span>Avg Points</span><b>35.36M</b></div>
-        <div><span>Avg Rank</span><b>64.3</b></div>
-        <div><span>Recent Change</span><b>-3.8%</b></div>
+        <div><span data-i18n="power">Power</span><b>170.1</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#34</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>35.36M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>64.3</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>-3.8%</b></div>
       </div>
-      <p>Contribution is low relative to power, with a slight recent decline.</p>
+      <p><span data-i18n="p9">Contribution is low relative to power, with a slight recent decline.</span></p>
     </section>
     
     <section class="card yellow">
       <div class="rank">#10</div>
       <div class="name">Duke’</div>
-      <div class="badge">🟡 Recently declined</div>
+      <div class="badge"><span data-i18n="recently_declined">🟡 Recently declined</span></div>
       <div class="stats">
-        <div><span>Power</span><b>173.7</b></div>
-        <div><span>Power Rank</span><b>#31</b></div>
-        <div><span>Avg Points</span><b>37.89M</b></div>
-        <div><span>Avg Rank</span><b>63.5</b></div>
-        <div><span>Recent Change</span><b>-21.4%</b></div>
+        <div><span data-i18n="power">Power</span><b>173.7</b></div>
+        <div><span><span data-i18n="power">Power</span> Rank</span><b>#31</b></div>
+        <div><span data-i18n="avg_points">Avg Points</span><b>37.89M</b></div>
+        <div><span data-i18n="avg_rank">Avg Rank</span><b>63.5</b></div>
+        <div><span data-i18n="recent_change">Recent Change</span><b>-21.4%</b></div>
       </div>
-      <p>Average rank is not among the lowest, but recent three-round points declined about 21.4%.</p>
+      <p><span data-i18n="p10">Average rank is not among the lowest, but recent three-round points declined about 21.4%.</span></p>
     </section>
     
 
-  <h2 class="section-title">Important Notes</h2>
+  <h2 class="section-title"><span data-i18n="important_notes">Important Notes</span></h2>
   <div class="notes">
     <ul>
-      <li>Ranks 4–10 are relatively close; actual participation, login activity, and event participation could change the order.</li>
-      <li>Cihan Ozel has very high power (204.5 / Rank 14) but an average Alliance Showdown rank of 63.3, making the power-to-contribution gap notable.</li>
-      <li>Duke’ averages rank 63.5, but recent three-round points declined about 21.4% versus the previous three rounds.</li>
-      <li>Some source data is missing: 4 members are missing on 7/4 and 1 member is missing on 7/11.</li>
-      <li>The Power Rank column contains values beyond the 76 members in the sheet, so it may represent an external/server ranking. It is used only as a relative power indicator.</li>
+      <li><span data-i18n="note1">Ranks 4–10 are relatively close; actual participation, login activity, and event participation could change the order.</span></li>
+      <li><span data-i18n="note2">Cihan Ozel has very high power (204.5 / Rank 14) but an average Alliance Showdown rank of 63.3, making the power-to-contribution gap notable.</span></li>
+      <li><span data-i18n="note3">Duke’ averages rank 63.5, but recent three-round points declined about 21.4% versus the previous three rounds.</span></li>
+      <li><span data-i18n="note4">Some source data is missing: 4 members are missing on 7/4 and 1 member is missing on 7/11.</span></li>
+      <li>The <span data-i18n="power">Power</span> Rank column contains values beyond the 76 members in the sheet, so it may represent an external/server ranking. It is used only as a relative power indicator.</li>
     </ul>
   </div>
-  <div class="footer">Source: Analysis Report_EN.xlsx • Optimized for smartphone viewing</div>
+  <div class="footer"><span data-i18n="footer">Source: Analysis Report_EN.xlsx • Optimized for smartphone viewing</span></div>
 </div>
+
+<script>
+const I18N = {"title": {"en": "Alliance Showdown<br>Kick Candidate Report", "ja": "同盟対決<br>キック候補レポート", "ko": "연맹대결<br>추방 후보 보고서", "id": "Laporan Kandidat Kick<br>Alliance Showdown", "tr": "İttifak Gösterisi<br>Atılacak Oyuncu Raporu"}, "analysis_period": {"en": "<b>Analysis period:</b> 2026/7/4 – 2026/8/8", "ja": "<b>分析期間：</b>2026/7/4 – 2026/8/8", "ko": "<b>분석 기간:</b> 2026/7/4 – 2026/8/8", "id": "<b>Periode analisis:</b> 2026/7/4 – 2026/8/8", "tr": "<b>Analiz dönemi:</b> 2026/7/4 – 2026/8/8"}, "rounds": {"en": "<b>Rounds:</b> 6", "ja": "<b>ラウンド数：</b>6", "ko": "<b>라운드:</b> 6", "id": "<b>Jumlah ronde:</b> 6", "tr": "<b>Tur sayısı:</b> 6"}, "rank_note": {"en": "Rank #1 = strongest kick recommendation", "ja": "順位 #1 = キック推奨度が最も高い", "ko": "순위 #1 = 추방 추천도가 가장 높음", "id": "Peringkat #1 = rekomendasi kick tertinggi", "tr": "Sıra #1 = çıkarılması en güçlü önerilen oyuncu"}, "candidates": {"en": "Candidates", "ja": "候補者", "ko": "후보자", "id": "Kandidat", "tr": "Adaylar"}, "top_priority": {"en": "Top Priority", "ja": "最優先", "ko": "최우선", "id": "Prioritas Utama", "tr": "Öncelikli"}, "review_order": {"en": "Recommended Review Order", "ja": "推奨確認順", "ko": "추천 검토 순서", "id": "Urutan Tinjauan yang Disarankan", "tr": "Önerilen İnceleme Sırası"}, "highest_priority": {"en": "🔴 Highest priority", "ja": "🔴 最優先", "ko": "🔴 최우선", "id": "🔴 Prioritas tertinggi", "tr": "🔴 En yüksek öncelik"}, "review": {"en": "🟠 Review", "ja": "🟠 要確認", "ko": "🟠 검토 필요", "id": "🟠 Perlu ditinjau", "tr": "🟠 İncelenmeli"}, "improving": {"en": "🟠 Improving", "ja": "🟠 改善傾向", "ko": "🟠 개선 중", "id": "🟠 Meningkat", "tr": "🟠 İyileşiyor"}, "low_vs_power": {"en": "🟠 Low contribution vs. power", "ja": "🟠 戦力に対して貢献度が低い", "ko": "🟠 전력 대비 기여도 낮음", "id": "🟠 Kontribusi rendah dibandingkan power", "tr": "🟠 Güce kıyasla düşük katkı"}, "low_vs_power_decline": {"en": "🟡 Low vs. power / slight decline", "ja": "🟡 戦力に対して低め／やや低下", "ko": "🟡 전력 대비 낮음 / 소폭 하락", "id": "🟡 Rendah dibandingkan power / sedikit menurun", "tr": "🟡 Güce göre düşük / hafif düşüş"}, "recently_declined": {"en": "🟡 Recently declined", "ja": "🟡 最近低下", "ko": "🟡 최근 하락", "id": "🟡 Baru-baru ini menurun", "tr": "🟡 Son dönemde düşüş"}, "power": {"en": "Power", "ja": "戦力", "ko": "전력", "id": "Power", "tr": "Güç"}, "power_rank": {"en": "Power Rank", "ja": "戦力順位", "ko": "전력 순위", "id": "Peringkat Power", "tr": "Güç Sırası"}, "avg_points": {"en": "Avg Points", "ja": "平均ポイント", "ko": "평균 포인트", "id": "Rata-rata Poin", "tr": "Ortalama Puan"}, "avg_rank": {"en": "Avg Rank", "ja": "平均順位", "ko": "평균 순위", "id": "Peringkat Rata-rata", "tr": "Ortalama Sıra"}, "recent_change": {"en": "Recent Change", "ja": "直近の変化", "ko": "최근 변화", "id": "Perubahan Terbaru", "tr": "Son Değişim"}, "important_notes": {"en": "Important Notes", "ja": "重要事項", "ko": "중요 참고사항", "id": "Catatan Penting", "tr": "Önemli Notlar"}, "note1": {"en": "Ranks 4–10 are relatively close; actual participation, login activity, and event participation could change the order.", "ja": "4～10位は比較的差が小さいため、実際の参加状況・ログイン状況・イベント参加状況によって順位が変わる可能性があります。", "ko": "4~10위는 차이가 비교적 작기 때문에 실제 참여도, 접속 활동, 이벤트 참여 여부에 따라 순서가 달라질 수 있습니다.", "id": "Peringkat 4–10 relatif berdekatan; keaktifan, aktivitas login, dan partisipasi event dapat mengubah urutan.", "tr": "4–10. sıralar birbirine yakın; gerçek katılım, giriş aktivitesi ve etkinlik katılımı sıralamayı değiştirebilir."}, "note2": {"en": "Cihan Ozel has very high power (204.5 / Rank 14) but an average Alliance Showdown rank of 63.3, making the power-to-contribution gap notable.", "ja": "Cihan Ozelは戦力が非常に高い（204.5／14位）一方、同盟対決の平均順位は63.3位で、戦力に対する貢献度の差が目立ちます。", "ko": "Cihan Ozel은 전력이 매우 높지만(204.5 / 14위) 연맹대결 평균 순위는 63.3위로, 전력 대비 기여도 차이가 눈에 띕니다.", "id": "Cihan Ozel memiliki power sangat tinggi (204.5 / peringkat 14), tetapi rata-rata peringkat Alliance Showdown adalah 63,3 sehingga terdapat kesenjangan power-kontribusi yang mencolok.", "tr": "Cihan Ozel çok yüksek güce sahip (204.5 / 14. sıra), ancak Alliance Showdown ortalama sırası 63,3; güç ile katkı arasındaki fark dikkat çekici."}, "note3": {"en": "Duke’ averages rank 63.5, but recent three-round points declined about 21.4% versus the previous three rounds.", "ja": "Duke’の平均順位は63.5位ですが、直近3ラウンドのポイントはその前の3ラウンドと比べて約21.4%低下しています。", "ko": "Duke’의 평균 순위는 63.5위이지만 최근 3라운드 포인트는 이전 3라운드 대비 약 21.4% 감소했습니다.", "id": "Rata-rata peringkat Duke’ adalah 63,5, tetapi poin tiga ronde terakhir turun sekitar 21,4% dibandingkan tiga ronde sebelumnya.", "tr": "Duke’ ortalama 63,5. sırada, ancak son üç turun puanları önceki üç tura göre yaklaşık %21,4 düştü."}, "note4": {"en": "Some source data is missing: 4 members are missing on 7/4 and 1 member is missing on 7/11.", "ja": "一部の元データが欠落しています：7/4は4名、7/11は1名のデータがありません。", "ko": "일부 원본 데이터가 누락되어 있습니다: 7/4에는 4명, 7/11에는 1명의 데이터가 없습니다.", "id": "Sebagian data sumber tidak tersedia: 4 anggota tidak tercatat pada 7/4 dan 1 anggota tidak tercatat pada 7/11.", "tr": "Bazı kaynak verileri eksik: 7/4 tarihinde 4 üye ve 7/11 tarihinde 1 üye eksik."}, "note5": {"en": "The Power Rank column contains values beyond the 76 members in the sheet, so it may represent an external/server ranking. It is used only as a relative power indicator.", "ja": "Power Rank列にはシート内の76名を超える順位が含まれているため、外部／サーバー順位を示している可能性があります。ここでは相対的な戦力指標としてのみ使用しています。", "ko": "Power Rank 열에는 시트의 76명을 넘어서는 순위가 포함되어 있어 외부/서버 순위를 나타낼 가능성이 있습니다. 여기서는 상대적인 전력 지표로만 사용합니다.", "id": "Kolom Power Rank berisi nilai di luar 76 anggota dalam sheet, sehingga mungkin merupakan peringkat eksternal/server. Di sini hanya digunakan sebagai indikator power relatif.", "tr": "Power Rank sütununda listedeki 76 üyeyi aşan değerler bulunuyor; bu nedenle harici/sunucu sıralaması olabilir. Burada yalnızca göreceli güç göstergesi olarak kullanılmıştır."}, "p1": {"en": "Ranked in the lower group for all six rounds: 82→84→86→89→89→90. Long-term low contribution despite relatively strong power.", "ja": "6ラウンドすべてで下位グループ：82→84→86→89→89→90。戦力は比較的高いにもかかわらず、長期的な貢献度が低いです。", "ko": "6개 라운드 모두 하위권: 82→84→86→89→89→90. 전력은 비교적 높지만 장기적인 기여도가 낮습니다.", "id": "Berada di kelompok bawah dalam keenam ronde: 82→84→86→89→89→90. Kontribusi jangka panjang rendah meskipun power relatif tinggi.", "tr": "Altı turun tamamında alt grupta yer aldı: 82→84→86→89→89→90. Gücü görece yüksek olmasına rağmen uzun vadeli katkısı düşük."}, "p2": {"en": "Stayed around ranks 79–84 for all six rounds. Power is relatively high, but Alliance Showdown contribution remains consistently low.", "ja": "6ラウンドすべてで79～84位付近。戦力は比較的高いものの、同盟対決への貢献度は一貫して低いです。", "ko": "6개 라운드 모두 79~84위권에 머물렀습니다. 전력은 비교적 높지만 연맹대결 기여도는 지속적으로 낮습니다.", "id": "Berada di sekitar peringkat 79–84 selama keenam ronde. Power relatif tinggi, tetapi kontribusi Alliance Showdown tetap rendah.", "tr": "Altı turun boyunca 79–84. sıralar civarında kaldı. Gücü görece yüksek, ancak Alliance Showdown katkısı sürekli düşük."}, "p3": {"en": "Ranks remained around 76–85. Recent results improved by about 9%, but long-term contribution is still low.", "ja": "順位は76～85位付近で推移。直近の結果は約9%改善しましたが、長期的な貢献度は依然として低いです。", "ko": "순위는 76~85위권을 유지했습니다. 최근 결과는 약 9% 개선됐지만 장기적인 기여도는 여전히 낮습니다.", "id": "Peringkat tetap sekitar 76–85. Hasil terbaru meningkat sekitar 9%, tetapi kontribusi jangka panjang masih rendah.", "tr": "Sıralaması 76–85 civarında kaldı. Sonuçlar son dönemde yaklaşık %9 iyileşti, ancak uzun vadeli katkı hâlâ düşük."}, "p4": {"en": "Lower overall performance, but recent three-round points improved by about 45%. Therefore less certain than ranks 1–3.", "ja": "全体的な成績は低めですが、直近3ラウンドのポイントは約45%改善。1～3位より判断の確度は低いです。", "ko": "전체적인 성과는 낮지만 최근 3라운드 포인트가 약 45% 개선되었습니다. 따라서 1~3위보다 판단의 확실성이 낮습니다.", "id": "Kinerja keseluruhan rendah, tetapi poin tiga ronde terakhir meningkat sekitar 45%. Karena itu, kandidat ini kurang pasti dibanding peringkat 1–3.", "tr": "Genel performansı düşük, ancak son üç turun puanları yaklaşık %45 arttı. Bu nedenle 1–3. sıralara göre karar daha az kesin."}, "p5": {"en": "Both power and Alliance Showdown performance are low. Candidate based on overall contribution, not power-to-contribution mismatch.", "ja": "戦力・同盟対決の成績ともに低め。戦力と貢献度の乖離ではなく、総合的な貢献度を基準とした候補です。", "ko": "전력과 연맹대결 성과가 모두 낮습니다. 전력 대비 기여도 차이가 아니라 전체적인 기여도를 기준으로 선정된 후보입니다.", "id": "Power dan performa Alliance Showdown sama-sama rendah. Kandidat berdasarkan kontribusi keseluruhan, bukan kesenjangan power terhadap kontribusi.", "tr": "Hem güç hem de Alliance Showdown performansı düşük. Güç-katkı farkından ziyade genel katkıya göre aday olarak belirlenmiştir."}, "p6": {"en": "Lower overall contribution; review alongside activity and participation.", "ja": "総合的な貢献度が低め。活動状況や参加状況とあわせて確認してください。", "ko": "전체적인 기여도가 낮습니다. 활동 및 참여도와 함께 검토해야 합니다.", "id": "Kontribusi keseluruhan rendah; tinjau bersama aktivitas dan partisipasi.", "tr": "Genel katkısı düşük; aktivite ve katılım ile birlikte değerlendirilmelidir."}, "p7": {"en": "Recent performance is improving, so removal should be considered cautiously.", "ja": "最近の成績は改善傾向にあるため、キック判断は慎重に行うべきです。", "ko": "최근 성과가 개선되고 있으므로 추방 여부는 신중하게 판단해야 합니다.", "id": "Performa terbaru membaik, jadi keputusan untuk kick sebaiknya dipertimbangkan dengan hati-hati.", "tr": "Son performansı iyileşiyor; bu nedenle çıkarılma kararı dikkatle değerlendirilmelidir."}, "p8": {"en": "Very high power, but contribution is comparatively low. The power-to-contribution gap is notable.", "ja": "戦力は非常に高い一方、貢献度は比較的低め。戦力と貢献度の差が目立ちます。", "ko": "전력은 매우 높지만 기여도는 상대적으로 낮습니다. 전력 대비 기여도 차이가 눈에 띕니다.", "id": "Power sangat tinggi, tetapi kontribusinya relatif rendah. Kesenjangan antara power dan kontribusi cukup mencolok.", "tr": "Gücü çok yüksek, ancak katkısı görece düşük. Güç ile katkı arasındaki fark dikkat çekici."}, "p9": {"en": "Contribution is low relative to power, with a slight recent decline.", "ja": "戦力に対して貢献度が低く、直近ではやや低下しています。", "ko": "전력 대비 기여도가 낮으며 최근에는 소폭 하락했습니다.", "id": "Kontribusi rendah dibandingkan power, dengan sedikit penurunan baru-baru ini.", "tr": "Gücüne kıyasla katkısı düşük ve son dönemde hafif bir düşüş var."}, "p10": {"en": "Average rank is not among the lowest, but recent three-round points declined about 21.4%.", "ja": "平均順位は最下位グループではありませんが、直近3ラウンドのポイントが約21.4%低下しています。", "ko": "평균 순위는 최하위권은 아니지만 최근 3라운드 포인트가 약 21.4% 감소했습니다.", "id": "Peringkat rata-rata bukan yang terendah, tetapi poin tiga ronde terakhir turun sekitar 21,4%.", "tr": "Ortalama sırası en alt grupta değil, ancak son üç turun puanları yaklaşık %21,4 düştü."}, "footer": {"en": "Source: Analysis Report_EN.xlsx • Optimized for smartphone viewing", "ja": "出典：Analysis Report_EN.xlsx • スマートフォン表示に最適化", "ko": "출처: Analysis Report_EN.xlsx • 스마트폰 보기 최적화", "id": "Sumber: Analysis Report_EN.xlsx • Dioptimalkan untuk tampilan smartphone", "tr": "Kaynak: Analysis Report_EN.xlsx • Akıllı telefon görüntülemesi için optimize edilmiştir"}};
+function setLanguage(lang){
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key=el.dataset.i18n;
+    if(I18N[key] && I18N[key][lang]) el.innerHTML=I18N[key][lang];
+  });
+  const title = {
+    en:'Alliance Showdown — Kick Candidate Report',
+    ja:'同盟対決 — キック候補レポート',
+    ko:'연맹대결 — 추방 후보 보고서',
+    id:'Alliance Showdown — Laporan Kandidat Kick',
+    tr:'İttifak Gösterisi — Atılacak Oyuncu Raporu'
+  };
+  document.title = title[lang] || title.en;
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+  try{localStorage.setItem('reportLanguage',lang)}catch(e){}
+}
+document.querySelectorAll('.lang-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>setLanguage(btn.dataset.lang));
+});
+let saved='en';
+try{saved=localStorage.getItem('reportLanguage')||'en'}catch(e){}
+setLanguage(saved);
+</script>
+
 </body>
 </html>
